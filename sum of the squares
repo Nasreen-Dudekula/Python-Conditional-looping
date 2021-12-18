@@ -1,0 +1,33 @@
+Given an integer n, write a python function to return true, if it is possible to represent it as a sum of the squares of two different integers, else return false.
+
+
+Sample Input 1:
+5                     (1+4=5)
+
+Sample Output 1:
+True
+
+Sample Input 2:
+14
+
+Sample Output 2:
+False
+
+
+Code:
+
+
+Given an integer n, write a python function to return true, if it is possible to represent it as a sum of the squares of two different integers, else return false.
+
+
+Sample Input 1:
+5                     (1+4=5)
+
+Sample Output 1:
+True
+
+Sample Input 2:
+14
+
+Sample Output 2:
+False
