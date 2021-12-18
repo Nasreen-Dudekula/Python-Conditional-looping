@@ -1,0 +1,66 @@
+Write a python function which accepts three numbers and returns True if
+a. one of the three numbers is "close" to any one of the other numbers (differing from a number by at most 2), and
+b.Number that is left out is "far", differing from both other values by 3 or more.
+
+Return false if the above mentioned conditions are not satisfied.
+
+Sample Input 1:
+5
+0
+3
+
+Sample Output 1:
+True
+
+Sample Input 2:
+5
+6
+7
+
+Sample Output 2:
+False
+
+
+Code:
+
+def dif(a,b,c):
+    flag=0
+    m=0
+    n=0
+    if (a==b or a==b+1 or a==b+2 or a==b-1 or a==b-2): 
+        if(c>a):
+            m=c-a
+        else:
+            m=a-c
+        if(c>b):
+            n=c-b
+        else:
+            n=b-c
+    elif (a==c or a==c+1 or a==c+2 or a==c-1 or a==c-2):
+        if(b>a):
+            m=b-a
+        else:
+            m=a-b
+        if(c>b):
+            n=c-b
+        else:
+            n=b-c
+    elif (b==c or b==c+1 or b==c+2 or b==c-1 or b==c-2):
+        if(b>a):
+            m=b-a
+        else:
+            m=a-b
+        if(c>a):
+            n=c-a
+        else:
+            n=a-c
+    else:
+        print('False')
+    if m>=3 and n>=3:
+        print('True')
+    else:
+        print('False')
+x=int(input())
+y=int(input())
+z=int(input())
+dif(x,y,z)
