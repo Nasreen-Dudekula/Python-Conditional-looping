@@ -1,0 +1,40 @@
+Given 2 positive integers, write a python function to return True if one of them is 50 or if their sum is 50, else return False.
+
+If any of the 2 inputs is negative, the function returns "Invalid Input".
+
+Sample Input 1:
+50
+9
+
+Sample Output 1:
+True
+
+Sample Input 2:
+42
+8
+
+Sample Output 2:
+True
+
+Sample Input 3:
+12
+39
+
+Sample Output 3:
+False
+
+
+Code:
+
+def sum(a,b):
+    n=a+b
+    if (a<0 or b<0):
+        print('Invalid Input')
+    else:
+        if (a==50 or b==50 or n==50):
+            print('True')
+        else:
+            print('False')
+x=int(input())
+y=int(input())
+sum(x,y)
