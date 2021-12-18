@@ -1,0 +1,17 @@
+Write a python function to find and display the six digit number in which the first digit is two more than the second, the second digit is two more than the third, the fourth digit is three greater than the third, the fifth digit is two more than the fourth and the last digit is the sum of fourth and fifth . The sum of all the digits is 22.
+
+Output is the special 6-digit number that satisfies the conditions given above.
+
+Code:
+
+def dis():
+    x=(22-22)//7
+    c=x
+    a=x+4
+    b=x+2
+    d=x+3
+    e=x+5
+    f=d+e
+    y=f+(e*10)+(d*(10**2))+(c*(10**3))+(b*(10**4))+(a*(10**5))
+    print(y)
+dis()
