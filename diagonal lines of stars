@@ -1,0 +1,22 @@
+Write a python function to print the given number of diagonal lines of stars.
+
+Sample Input: 
+5
+
+Sample Output:
+....*
+...*
+..*
+.*
+*
+Note: Setting the end parameter of the print function to empty string prevents the issuing of the new line.
+Example: print(".",end="") will maintain the cursor in the same line after displaying "."
+
+Code:
+
+def dis(a):
+    for i in range(a-1,0,-1):
+        print(i*'.'+'*')
+    print('*')
+n=int(input())
+dis(n)
