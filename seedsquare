@@ -1,0 +1,41 @@
+Given two numbers, write a python function which returns true if first number is a seedsquare of second number. Otherwise it returns false.
+A number X is said to be a seedsquare of number Y, if multiplying X by the square of its each digit equates to Y.
+
+If any of the 2 numbers is negative, the function returns "Invalid Input".
+ 
+
+For example, 123 is a seed of 4428 as 123*1*4*9= 4428
+
+Sample Input 1:
+123
+4428
+
+Sample Output 1:
+True
+
+Sample Input 2:
+45
+1000
+
+Sample Output 2:
+False
+
+Code:
+
+
+def seed(a,b):
+    n=a
+    if a<0 or b<0:
+        print('Invalid Input') 
+    else:
+        while(n>0):
+            r=n%10
+            a*=r**2
+            n=n//10
+        if a==b:
+            print('True')
+        else:
+            print('False')
+x=int(input())
+y=int(input())
+seed(x,y)
